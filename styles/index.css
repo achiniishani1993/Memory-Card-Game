@@ -1,0 +1,26 @@
+body {
+  margin: 50px;
+  min-height: 100vh;
+}
+
+.game-container-display {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin: 50px 0px;
+
+  background-color: aquamarine;
+  cursor: pointer;
+
+  box-shadow: 8px 19px 80px 18px rgba(210, 255, 28, 0.577);
+  -webkit-box-shadow: 8px 19px 80px 18px rgba(210, 255, 28, 0.577);
+  -moz-box-shadow: 8px 19px 80px 18px rgba(210, 255, 28, 0.577);
+}
+
+.end-game-Container-display{
+text-align: center;
+font-size: 30px;
+}

@@ -58,9 +58,13 @@ function createBoard() {
         if (firstCard.dataset.letter === secondCard.dataset.letter) {
           scoreEl.innerHTML = score += 1;
 
-          endGameContainer.style.display = "block";
-          endGameContainer.innerHTML = "Matched.. keep going";
-
+          if (score === cardsArray.length / 2) {
+            endGameContainer.style.display = "block";
+            endGameContainer.innerHTML = "Congratulations! You win!";
+          } else {
+            endGameContainer.style.display = "block";
+            endGameContainer.innerHTML = "Matched.. keep going";
+          }
           firstCard = null;
           secondCard = null;
           lockBoard = false;
