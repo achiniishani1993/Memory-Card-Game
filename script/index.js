@@ -63,6 +63,7 @@ function createBoard() {
             endGameContainer.innerHTML = "Congratulations! You win!";
           } else {
             endGameContainer.style.display = "block";
+            endGameContainer.style.color = "Green"; 
             endGameContainer.innerHTML = "Matched.. keep going";
           }
           firstCard = null;
@@ -70,6 +71,7 @@ function createBoard() {
           lockBoard = false;
         } else {
           endGameContainer.style.display = "block";
+          endGameContainer.style.color = "red"; 
           endGameContainer.innerHTML = "UnMatched.. try again";
 
           setTimeout(() => {
